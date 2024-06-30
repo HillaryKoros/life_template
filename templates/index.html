@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+    <style>
+        /* CSS styles for controlling plot display size */
+        .plot-container {
+            width: 100%; /* Adjust to match your container width */
+            max-width: 1200px; /* Example: Limiting max width */
+            margin: 0 auto; /* Center align if needed */
+        }
+        .plot {
+            width: 100%; /* Ensure plot takes full width of container */
+            height: auto; /* Let height adjust proportionally */
+            display: block; /* Ensures no extra space below image */
+        }
+    </style>
+</head>
+<body>
+    <div class="plot-container">
+        <img class="plot" src="data:image/png;base64,{{ plot_base64 }}" alt="Plot">
+    </div>
+</body>
+</html>
